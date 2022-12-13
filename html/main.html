@@ -1,0 +1,29 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <header>
+      <div id="header">
+          <link rel="stylesheet" href="{% static 'stile.css' %}">
+          <title>ecoHotel Pomelia</title>
+          <h1 class="titolo">ecoHotel Pomelia</h1>
+          <h1 class="sottotitolo">Dashboard for energy consumed and produce by solar panel</h1>
+      </div>
+    </header>
+
+    <body>
+    <div id="login_info">
+        {% if user.is_authenticated %}
+            <p class="menu">Welcome {{ user.username }} - <a href="{% url 'home' %}">Home</a> - <a href="{% url 'staff' %}">Administrator Area</a>- <a href="{% url 'logout' %}">Log Out</a></p>
+        {% endif %}
+    </div>
+
+    <div id="table_center">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+    </body>
+
+</html>

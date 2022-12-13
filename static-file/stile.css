@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+.titolo{
+    color: #45526C;
+    font-family: 'Plus Jakarta Sans';
+    text-align: left;
+    font-size: 48px
+}
+
+.sottotitolo{
+    color: #F8A488;
+    font-family: 'Plus Jakarta Sans';
+    text-align: left;
+    font-size: 16px;
+}
+
+body{
+    background-color: #F8F5F1;
+    font-family: 'Plus Jakarta Sans';
+}
+
+
+
+#login_info {
+    background-color: #5AA897;
+    color: white;
+
+}
+
+.menu {
+    text-align:left;
+    color: #45526C;
+}
+
+#tabel_center {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#login_info.menu {
+    text-align: right;
+
+}
+
+#table_block {
+    float: center;
+}
+
+td {
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    td:hover {background-color: coral;}
+    td:nth-child(even) {background-color: #f2f2f2;}
+    border-color: black;
+    border-collapse: collapse;
+}
+
+th {
+  background-color: #5AA897;
+  font-size: 14px;
+  color: #45526C;
+  border-color: black;
+  border-collapse: collapse;
+}
+
+a:link {
+  color: #45526C;
+}
+
+/* visited link */
+a:visited {
+  color: #45526C;
+}
+
+/* mouse over link */
+a:hover {
+  color: #F8A488;
+}
+
+/* selected link */
+a:active {
+  color: #45526C;
+}
+

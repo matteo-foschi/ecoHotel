@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'stile.css' %}">
+</head>
+
+    {% block content %}
+    {% if user.is_authenticated %}
+        <table>
+            <thead>
+                <tr><th>Date</th>
+                    <th>Produced energy</th>
+                    <th>Consumed energy</th>
+                    <th>Id Transaction blockchain</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for report in dati %}
+                <tr>
+                    <td>{{ report.report_date }}</td>
+                    <td>{{ report.produced_energy_in_watt }}</td>
+                    <td>{{ report.consumed_energy_in_watt }}</td>
+                    <td>{{ report.txId }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div id="login_info">
+          <p>You are not logged in. Please <a href="{% url 'login' %}">Log In</a></p>
+        </div>
+    {% endif %}
+    {% endblock %}
+
+
