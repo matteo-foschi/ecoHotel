@@ -19,7 +19,6 @@ from django.urls import path, include
 from pannello.views import report_list
 from pannello.views import report_staff
 from pannello.views import newReport
-from pannello.views import get_ip_address
 
 
 urlpatterns = [
