@@ -45,10 +45,9 @@ def newReport(request):
     else:
         return StreamingHttpResponse('Endpoint Page')
 
-
+""" NO USE IN PA
 @receiver(user_logged_in)
 def get_ip_address(sender, user, request, **kwargs):
-""" NO USE IN PA
     different_IP = False
     if user.is_staff:
         user_ip_address = request.META.get('HTTP_X_FORWARDED_FOR')
