@@ -45,7 +45,7 @@ def newReport(request):
     else:
         return StreamingHttpResponse('Endpoint Page')
 
-
+""" NO USE IN PA
 @receiver(user_logged_in)
 def get_ip_address(sender, user, request, **kwargs):
     different_IP = False
@@ -73,3 +73,4 @@ def get_ip_address(sender, user, request, **kwargs):
                 r.set(username,ip)
     if different_IP == True:
         print("Administrator user " + username + " logged in with new IP: " + ip + " different to the old IP: " + ip_user)
+"""
