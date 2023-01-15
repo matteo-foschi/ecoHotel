@@ -23,7 +23,7 @@ To deploy this project:
 - Use the folder "ecoHotel":
 
 ```bash
-  cd exchange
+  cd ecoHotel
 ```
 
 - Run 
